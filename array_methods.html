@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array Methods</title>
+</head>
+<body>
+
+	<!-- Array methods(functions) -->
+
+	<!-- 1.sort()->
+				-> The sort() method sorts an array alphabetically.
+				-> By default, sort() method follows the ascending order.
+				-> the sort() function sorts values as strings.
+				-> the sort() method will produce incorrect result when sorting numbers.
+				-> eg: array.sort();
+	-->
+
+	<!-- 2.reverse()->
+				-> The reverse() method reverses the order of the elements in an array.
+				-> The first array element becomes the last and the last becomes the first.
+				-> eg:array.reverse();
+	-->
+
+	<!-- 3.push()->
+				-> push() method adds one or more elements to the end of the given array. This method changes the length of the original array.
+				-> Returns the length of the new array.
+				-> eg:array.push(element1, ..., elementN);
+	-->
+
+	<!-- 4.pop()-> 
+				-> pop() method removes the last element from the given array.This method changes the length of the original array.
+				->Returns the removed element from the array.
+				-> eg:array.pop();
+	-->
+
+	<!-- 5.shift()->
+				-> shift() method removes the first element of the given array and changes the length of the original array.
+				-> Returns the removed single value of the array.
+				-> eg:array.shift(); 
+
+	-->
+
+	<!-- 6.unshift()->
+				-> unshift() method adds one or more elements in the beginning of the given array and changes the length of the original array.
+				-> Returns the length of the new array.
+				-> eg:rray.unshift(element1,element2,....,elementn);  
+	-->
+
+	<!-- 7.concat()->
+				-> concat() method combines two or more arrays and doesn't make any change in the original array.
+				-> returns a new array, containing the joined arrays.
+				-> eg:array.concat(arr1,arr2,....,arrn); 
+	-->
+
+	<!-- 8.join()->
+				-> join() method combines all the elements of an array into a string. 
+				-> We can use any type of separators to separate given array elements.
+				-> Returns a string after joining all the array elements.
+				-> eg:array.join(separator); 
+	-->
+
+	<!-- 9.isArray()->
+				-> is used to test whether the value passed is an array. If it finds the passed value is an array, it returns True. Otherwise, it returns False.
+				-> eg: Array.isArray(obj_value);  
+	-->
+
+	<!-- 10.indexOf()->
+				-> indexOf() method is used to search the position of a particular element in a given array.
+				-> returns the first index at which a given element can be found in the array, or -1 if it is not present.
+				-> eg:array.indexOf(item, start);
+	-->
+
+	<!-- 11.lastIndexOf()->
+				-> indexOf() method is  used to search the position of a particular element in a given array
+				it start searching an element from the last position of an array.
+				-> Returns the index of the found element from the last or -1 if it is not present.
+				-> eg:array.lastIndexOf(item, start);
+	-->
+
+	<!-- 12.includes()->
+				-> includes() method checks whether the given array contains the specified element. 
+				-> returns true if an array contains the element, otherwise false.
+				-> eg:array.includes(element, start);
+	-->
+
+	<!-- 13.some()->
+				-> some() method perform testing and checks if atleast a single array element passes the test, implemented by the provided function. If the test is passed, it returns true. Else, returns false.
+				-> eg: array.some(function(value, index, arr), this);
+	-->
+
+	<!-- 14.every()->
+				-> every() method check whether all the given elements in an array are satisfying the provided condition. It returns true when each given array element satisfying the condition otherwise false.
+				-> eg: array.every(function(currentValue, index, arr), thisValue);
+	-->
+
+	<!-- 15.find()->
+				-> find() method return the first element of the given array that satisfies the provided function condition.
+				-> eg:array.find(function(currentValue, index, arr),thisValue);
+	-->
+
+	<!-- 16.findIndex()->
+				-> findIndex() method returns the index of first element of the given array that satisfies the provided function condition. It returns -1, if no element satisfies the condition.
+				-> eg:array.findIndex(function(currentValue, index, arr), thisValue);
+	-->
+
+	<!-- 17.fiLter()->
+				-> filter() method filter and extract the element of an array that satisfying the provided condition. It doesn't change the original array.
+				-> Returns created array.
+				-> eg:array.filter(function(currentValue, index, arr), thisValue);
+	-->
+
+	<!-- 18.toString()->
+				-> The toString() method is used for converting an array into string form. 
+				-> It returns the string containing the specified array elements. Commas separate these elements, and the string does not affect the original array.
+				-> eg:array.toString();
+	-->
+
+	<!-- 19.slice()->
+				-> slice() method extracts the part of the given array and returns it. This method doesn't change the original array.
+				->Returns the extracted array based on the passed parameters.
+				-> eg:array.slice(start, end);
+	-->
+
+	<!-- 20.splice()->
+				-> splice() method is used to add/remove the elements to/from the existing array. It returns the removed elements from an array. The splice() method also modifies the original array.
+				-> eg:array.splice(index, howmany, item1, ....., itemX);
+	-->
+
+	<!-- 21.forEach()->
+				-> forEach() method calls a function (a callback function) once for each array element.
+				-> Returns the created array.
+				-> eg: array.forEach(function(currentValue, index, arr), thisValue);
+	-->
+
+
+	<script type="text/javascript" src="array_methods.js"></script>
+
+</body>
+</html> 

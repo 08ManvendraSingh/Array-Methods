@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+	<!-- Sort Method -->
+-
+	<script type="text/javascript">
+		var a=['cat','fan','dog','animal','can'];
+		console.log(a.sort());
+
+		var b=[2,6,2,5,1,8];
+		console.log(b.sort());
+
+		var c=[232,44,654,23,1,11];
+		console.log(c.sort());
+
+		var d=[23,4,223,44,6,555,6789,89];
+		console.log(d.sort(function(a,b){
+			return a-b;
+		}));
+
+		var e=[23,4,223,44,6,555,6789,89];
+		console.log(e.sort(function(a,b){
+			return b-a;
+		}));
+	</script>
+
+
+
+</body>
+</html>

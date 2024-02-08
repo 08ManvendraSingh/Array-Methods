@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<!-- Map Method -->
+	<!-- It allows us to iterate over an array and modify its element and give the result in new array -->
+	<!-- it does not effect the original array -->
+	<!-- it does not execute the function for empty element -->
+
+	<script type="text/javascript">
+		// 1.double an array
+	    var a=[2,3,4,4,5,7];
+	    var b=a.map((x)=>x*2);
+	    console.log(b);
+	    // 2.triple an array 
+	    var w=[1,2,3,4,5,9];
+	    var r=w.map((p)=>p*3);
+	    console.log(r);
+	    // 3.binary array
+	    var c=[1,2,3,4,5];
+	    var d=c.map((q)=>q.toString(2));
+	    console.log(d);
+	    // 4.get fullname of all user
+	    var a6=[
+	        {firstname : "Malcom", lastname: "Reynolds"},
+  			{firstname : "Kaylee", lastname: "Frye"},
+  			{firstname : "Jayne", lastname: "Cobb"}
+	    ]
+	    let newarr1=a6.map((x)=>`${x.firstname} ${x.lastname}`);
+	    console.log(newarr1);
+	    // 5.eg
+	    let arr = [2, 3, 5, 7]
+		arr.map(function(element, index, array){
+		    console.log(element);
+		    console.log(index);
+		    console.log(array);
+		    return element;
+		});
+		// 6.eg find their ages
+		const birthYear = [1975, 1997, 2002, 1995, 1985];
+		const ages = birthYear.map(year => 2023 - year);
+		console.log(ages);
+	</script>
+
+
+
+</body>
+</html>

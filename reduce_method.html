@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+
+	<!-- Reduce Method -->
+	<!-- it is an array method so it use only on array -->
+	<!-- The reduce() method returns a single value: the function's accumulated result. -->
+	<!-- it does not change the original array -->
+	<!-- it does not execute the function for empty elements -->
+	<script type="text/javascript">
+		// 1.eg find sum 
+		var a11=[1,2,3,4,5];
+		let newarr6=a11.reduce((acc,cur)=>acc+cur,0);
+		console.log(newarr6);
+		// 2.eg Subtract all numbers in an array
+		var a12=[1,2,3,4,5];
+		let newarr7=a12.reduce((acc,cur)=>acc-cur);
+		console.log(newarr7);
+		// 3.eg Round all the numbers and display the sum
+		var a13=[1.1,2.3,3.4,4.5,5.7];
+		let newarr8=a13.reduce((acc,cur)=>acc+Math.round(cur),0);
+		console.log(newarr8);
+		// 4.eg Find Average
+		var a14=[29.76, 41.85, 46.5];
+		let newarr9=a14.reduce((acc,cur)=>acc+cur)/a14.length;
+		console.log(newarr9);
+		// 5.eg find maximum
+		var h=[2,3,3,4,5,67,8,9]
+	    var j = h.reduce(function(acc,curr){
+	        if(curr>acc){
+	            acc = curr
+	        }
+	        return acc},0);
+	    console.log(j)
+	</script>
+
+
+</body>
+</html>

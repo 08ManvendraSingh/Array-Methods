@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<!-- Map, Filter, Reduce Method -->
+	<script>
+		// 1.eg find firstName from array whose age is more than 30
+		var a=[
+  		{firstName:"john",lastName:"Biden",age:26},
+  		{firstName:"jimmy",lastName:"Cob",age:75},
+  		{firstName:"Sam",lastName:"Lewis",age:50},
+  		{firstName:"Ronald",lastName:"Mathew",age:26}  
+		];
+		var a1=a.filter((x)=>x.age>30).map((i)=>i.firstName);
+		console.log(a1);
+
+		// 2.eg find students who scored more than 60
+		var b=[
+		{name:"Smith",rollNumber:31,marks:80},
+		{name:"Jenny",rollNumber:15,marks:69},
+		{name:"John",rollNumber:16,marks:35},
+		{name:"Tiger",rollNumber:7,marks:55}
+		];
+		var b1=b.filter((x)=>x.marks>60).map((i)=>i.name);
+		console.log(b1);
+
+		// 3.eg find total marks for students with marks greater than 60 after 20 marks have been added to those who scored less than 60
+		var c=[
+		{name:"Smith",rollNumber:31,marks:80},
+		{name:"Jenny",rollNumber:15,marks:69},
+		{name:"John",rollNumber:16,marks:35},
+		{name:"Tiger",rollNumber:7,marks:55}
+		];
+		var c1=c.filter((x)=>x.marks<60).map((i)=>i.marks+20);
+		var c2=c1.filter((x)=>x>60);
+		var c3=c.filter((q)=>q.marks>60).map((i)=>i.marks);
+		var c4=[...c2,...c3];
+		var c5=c4.reduce((acc,crr)=>acc+crr,0);
+		console.log(c5);
+
+		// 4.eg Sum of every positive element
+		var d= [1, -4, 12, 0, -3, 29, -150];
+		var d1=d.filter((x)=>x>0).reduce((acc,crr)=>acc+crr,0);
+		console.log(d1);
+
+		// 5.eg find name initials
+		var e="George Raymond Richard Martin";
+		var e1=e.split(" ").map((x)=>x[0]).reduce((acc,curr)=>{acc += curr
+			return acc
+		},"");
+		console.log(e2)
+	</script>
+</body>
+</html>
